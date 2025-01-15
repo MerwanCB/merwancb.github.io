@@ -13,6 +13,15 @@ header {
     text-align: center;
 }
 
+h1 {
+    animation: flash 1s linear 2;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -43,3 +52,30 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
