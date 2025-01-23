@@ -205,3 +205,11 @@ code {
 .contact-icons a:hover img {
     transform: scale(1.2);
 }
+
+.responsive-img {
+    width: 75%; /* Set the width to 75% */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    display: block; /* Center the image if needed */
+    margin: 0 auto; /* Center the image horizontally */
+}
