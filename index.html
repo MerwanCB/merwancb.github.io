@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .projects-grid {
+            grid-template-columns: repeat(2, 1fr); /* Override to 2 columns */
+        }
+        .project img {
+            max-height: 200px; /* Limit image height */
+            width: auto;       /* Maintain aspect ratio */
+            display: block;    /* Remove extra space below image */
+            margin: 0 auto;    /* Center image if container is wider */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -35,23 +46,23 @@
         <div class="projects-grid">
             <a href="ircc_forecasting.html" class="project">
                 <img src="ircc_dashboard1.png" alt="IRCC Forecasting">
-                <h3>IRCC Forecasting</h3>
+                <h3>IRCC Forecasting (PowerBI, Python, Prophet, Excel)</h3>
             </a>
             <a href="hospital_dashboard.html" class="project">
-                <img src="thumbnail2.png" alt="Project 1">
-                <h3>Hospital Dashboard</h3>
+                <img src="thumbnail2.png" alt="Hospital Dashboard">
+                <h3>Hospital Dashboard (PowerBI, MS SQL Server)</h3>
             </a>
             <a href="Engagement_Prediction.html" class="project">
-                <img src="thumbnail1.png" alt="Project 2">
-                <h3>Engagement Prediction</h3>
+                <img src="thumbnail1.png" alt="Engagement Prediction">
+                <h3>Engagement Prediction (PowerBI, Excel, Jupyter Notebook)</h3>
             </a>
             <a href="https://github.com/MerwanCB/Gutenberg-Book-Scraper" class="project">
-                <img src="thumbnail3.png" alt="Project 1">
-                <h3>Gutenberg Book Scraper</h3>
+                <img src="thumbnail3.png" alt="Gutenberg Book Scraper">
+                <h3>[GitHub] Gutenberg Book Scraper (Python)</h3>
             </a>
             <a href="https://github.com/MerwanCB/prolog-planning-examples" class="project">
-                <img src="thumbnail4.png" alt="Project 2">
-                <h3>Can Prolog solve the riddle?</h3>
+                <img src="thumbnail4.png" alt="Prolog Riddle Solver">
+                <h3>[GitHub] Can Prolog solve the riddle? (Prolog, Knowledge Representation)</h3>
             </a>
 
         </div>
